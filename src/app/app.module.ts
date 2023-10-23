@@ -18,6 +18,7 @@ import {MatCardModule} from '@angular/material/card';
 import {MatDividerModule} from '@angular/material/divider';
 import { CarritoComprasComponent } from './dashboard/carrito-compras/carrito-compras.component';
 import {MatDialog, MatDialogModule} from '@angular/material/dialog';
+import { ProveedorComponent } from './proveedor/proveedor.component';
 
 
 
@@ -25,7 +26,7 @@ import {MatDialog, MatDialogModule} from '@angular/material/dialog';
 @NgModule({
   declarations: [
     AppComponent,  
-    DashboardComponent, CarritoComprasComponent
+    DashboardComponent, CarritoComprasComponent, ProveedorComponent,
   ],
   imports: [
     BrowserModule,

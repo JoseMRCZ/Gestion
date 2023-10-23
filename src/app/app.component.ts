@@ -14,8 +14,12 @@ export class AppComponent {
   }
 
   login() { 
-      this.router.navigate(['/dashboard']);
+      this.router.navigate(['/productos']);
       console.log('voy al dash')
+  }
+  // button to open another component
+  goToProveedores() {
+    this.router.navigate(['/proveedores']);
   }
 }
 
