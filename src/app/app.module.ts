@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
-import {MatDialog, MatDialogModule} from '@angular/material/dialog';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -17,6 +16,8 @@ import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatCardModule} from '@angular/material/card';
 import {MatDividerModule} from '@angular/material/divider';
+import { CarritoComprasComponent } from './dashboard/carrito-compras/carrito-compras.component';
+import {MatDialog, MatDialogModule} from '@angular/material/dialog';
 
 
 
@@ -24,7 +25,7 @@ import {MatDividerModule} from '@angular/material/divider';
 @NgModule({
   declarations: [
     AppComponent,  
-    DashboardComponent
+    DashboardComponent, CarritoComprasComponent
   ],
   imports: [
     BrowserModule,
@@ -38,9 +39,10 @@ import {MatDividerModule} from '@angular/material/divider';
     MatInputModule,
     MatFormFieldModule,
     MatCardModule,
-    MatDividerModule,
     MatDialogModule,
-    MatDialog,
+    MatDividerModule,
+  
+
     AppRoutingModule
   ],
   providers: [],
